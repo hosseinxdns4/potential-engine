@@ -1,0 +1,53 @@
+{
+"inbounds": [{
+    "port": "10080", 
+    "listen": "127.0.0.1",
+    "tag": "socks-inbound",
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": false,
+      "ip": "127.0.0.1"
+    },
+    "sniffing": {
+      "enabled": true,
+      "destOverride": ["http", "tls"]
+    }
+  }],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+        "address": "bererb.pages.dev", 
+        "port": 443,
+        "users": [{"id": "0f0b7f69-78e1-4e9e-8b35-0986444613e4",
+		"encryption": "none"
+			}]
+      }]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "bererb.pages.dev",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "remarks":"x",
+            "Host": "bererb.pages.dev"
+          }
+        }
+      }
+    }
+  ],
+	"other": {}
+
+}
