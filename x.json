@@ -20,7 +20,7 @@
       "protocol": "vless",
       "settings": {
         "vnext": [{
-        "address": "188.114.98.0", 
+        "address": "bererb.pages.dev", 
         "port": 443,
         "users": [{"id": "0f0b7f69-78e1-4e9e-8b35-0986444613e4",
 		"encryption": "none"
@@ -32,7 +32,7 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "super-hall-5579.lithe-amphibian.workers.dev",
+          "serverName": "bererb.pages.dev",
           "alpn": [
             "http/1.1"
           ],
@@ -42,7 +42,7 @@
           "path": "/",
           "headers": {
             "remarks":"x",
-            "Host": "super-hall-5579.lithe-amphibian.workers.dev"
+            "Host": "bererb.pages.dev"
           }
         }
       }
