@@ -20,7 +20,7 @@
       "protocol": "vless",
       "settings": {
         "vnext": [{
-        "address": "bererb.pages.dev", 
+        "address": "sni.cloudflaressl.com", 
         "port": 443,
         "users": [{"id": "0f0b7f69-78e1-4e9e-8b35-0986444613e4",
 		"encryption": "none"
